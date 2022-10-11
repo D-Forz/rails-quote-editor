@@ -1,9 +1,9 @@
 <div class="quote">
   <%= link_to quote.name, quote_path(quote) %>
   <div class="quote__actions">
-    <%= button_to "Delete",
+    <%= link_to "Delete",
                   quote_path(quote),
-                  method: :delete,
+                  data: { turbo_method: :delete, turbo_confirm: "Are you sure?" },
                   class: "btn btn--light" %>
     <%= link_to "Edit",
                 edit_quote_path(quote),
