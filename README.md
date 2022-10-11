@@ -42,7 +42,7 @@ To run tests, run the following command
 
 
 ```bash
-  # macOS
+# macOS
 brew install --cask google-chrome
 
 # Ubuntu
