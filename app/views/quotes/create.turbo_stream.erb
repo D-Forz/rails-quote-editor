@@ -1,0 +1,6 @@
+<!-- <%= turbo_stream.prepend "quotes", partial: "quotes/quote", locals: { quote: @quote } %> -->
+
+<!-- this line is the same as the one in the top of the file -->
+<%= turbo_stream.prepend "quotes", @quote %>
+<!---->
+<%= turbo_stream.update Quote.new, "" %>
