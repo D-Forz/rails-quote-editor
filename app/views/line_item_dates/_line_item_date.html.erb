@@ -8,7 +8,7 @@
       <div class="line-item-date__actions">
         <%= link_to "Delete",
                       [quote, line_item_date],
-                      data: {turbo_method: "delete"},
+                      data: {turbo_method: :delete},
                       class: "btn btn--light" %>
         <%= link_to "Edit",
                     [:edit, quote, line_item_date],
